@@ -1,0 +1,23 @@
+{
+  "name": "@greasify/cli",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "greasify": "dist/bin.js"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "format": "prettier --write '**/*.{js,ts,tsx,json}'"
+  },
+  "devDependencies": {
+    "@crashmax/prettier-config": "3.2.1",
+    "@crashmax/tsconfig": "2.0.1",
+    "@types/node": "18.15.11",
+    "tsup": "6.7.0",
+    "typescript": "5.0.4"
+  },
+  "dependencies": {
+    "meow": "11.0.0"
+  }
+}
