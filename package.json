@@ -3,11 +3,14 @@
   "version": "0.0.0",
   "type": "module",
   "bin": {
-    "greasify": "dist/bin.js"
+    "gy": "./dist/bin.js",
+    "greasify": "./dist/bin.js"
   },
   "scripts": {
+    "start": "pnpm build && node dist/bin.js",
     "dev": "tsup --watch",
     "build": "tsup",
+    "type-check": "tsc --noEmit",
     "format": "prettier --write '**/*.{js,ts,tsx,json}'"
   },
   "devDependencies": {
@@ -18,6 +21,7 @@
     "typescript": "5.0.4"
   },
   "dependencies": {
-    "meow": "11.0.0"
+    "@types/yargs": "17.0.24",
+    "yargs": "17.7.1"
   }
 }
