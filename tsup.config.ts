@@ -5,10 +5,9 @@ export default defineConfig([
     entry: {
       bin: 'src/index.ts'
     },
-    target: ['node16'],
+    target: ['node20'],
     format: ['esm'],
-    silent: true,
-    minify: true,
+    minify: false,
     clean: true
   }
 ])
